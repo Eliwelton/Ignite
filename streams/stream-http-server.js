@@ -23,7 +23,7 @@ const server = http.createServer(async (req,res) => {
     }
 
     const fullStreamContent = Buffer.concat(buffers).toString()
-    
+
     Console.log(fullStreamContent)
 
     return res.end(fullStreamContent)
@@ -32,5 +32,5 @@ const server = http.createServer(async (req,res) => {
 })
 
 server.listen(3334, () => {
-    console.log('Server running in port 3334')
+    console.log('Server running in port - 3334')
 })
